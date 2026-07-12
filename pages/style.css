@@ -1,0 +1,444 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+
+:root{
+    --blue: hsl(233, 26%, 24%);
+    --cyan:hsl(192, 69%, 51%);
+    --green: hsl(136, 64%, 51%);
+}
+
+body{
+    font-family:"Public Sans" , sans-serif;
+    width:100vw;
+}
+header{
+background-color: hsl(0, 100%, 100%);
+display: flex;
+justify-content: space-between;
+padding:10px 10vw;
+height:75px;
+align-items: center;
+position:sticky;
+top:0;
+background-color: white;
+z-index:99;
+
+
+}
+.menu-btn{
+    display:none;
+}
+ul{
+    display: flex;
+    color:hsl(233, 8%, 62%);
+   list-style: none;
+  gap:30px;
+}
+
+
+.not-menu-btn{
+all:unset;
+cursor :pointer;
+padding:0 10px;
+font-size:0.9rem;
+border:1px solid transparent;
+background: HSL(136, 64%, 51%);
+background: linear-gradient(36deg, rgba(50, 210, 93, 1) 0%, rgba(44, 182, 216, 1) 100%);
+border-radius: 25px;
+padding:15px 20px;
+color:white;
+text-align: center;
+}
+
+
+
+main #section1{
+    display:flex;
+    justify-content: space-between;
+  padding: 0;
+  height: min-content;
+
+}
+
+main #section1 #part2{
+
+    
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    
+      
+
+}
+
+#part2 img{
+width:60vw;
+overflow: hidden;
+}
+#part2{
+    overflow: hidden;
+}
+#part1{
+    padding:10vw 0;
+    
+}
+#part1 h1{
+color:hsl(233, 26%, 24%);
+    font-weight:500;
+    padding-bottom:5vw;
+    font-size: 3rem;
+}
+
+#part1 p{
+    color:hsl(233, 8%, 62%);
+    font-size: 0.9rem;
+    padding-bottom:5vw;
+    font-size:1.1rem;
+    line-height: 1.8;
+}
+main #section #part2 {
+      
+    margin-right: 0;
+    padding-right: 0;
+}
+#section1{
+    padding : 0 0 0 10vw ;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+
+#section2,
+#section3{
+padding:10vw 10vw;
+}
+
+#section2{
+    background-color:hsl(220, 16%, 96%) ;
+} 
+
+#section2 h2{
+font-weight: 400;
+font-size: 2rem;
+color: hsl(233, 26%, 24%);
+padding-bottom: 1.5rem;
+}
+
+#section2 p{
+    font-size: 0.9rem;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5;
+
+}
+#section2:nth-child(3){
+    padding-bottom: 2rem;
+}
+#section2 section{
+    display: flex;
+    gap: 20px;
+
+}
+
+#section2 section h3{
+padding: 15px 0;
+color: hsl(233, 26%, 24%);
+font-weight: 300;
+font-size:1.5rem ;
+
+}
+
+#section2 img{
+    padding: 2em 0;
+}
+
+
+#section3 h2{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color:  hsl(233, 26%, 24%);
+}
+
+
+
+#img1{
+    background-image:url(../images/image-currency.jpg);
+}
+#img2{
+    background-image:url(../images/image-restaurant.jpg);
+}
+
+#img3{
+    background-image: url(../images/image-plane.jpg);
+}
+
+#img4{
+    background-image:url(../images/image-confetti.jpg) ;
+}
+
+
+#section3 section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#section3 section > div {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.backgroundimage {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img1 {
+    background-image: url(../images/image-currency.jpg);
+}
+
+#img2 {
+    background-image: url(../images/image-restaurant.jpg);
+}
+
+#img3 {
+    background-image: url(../images/image-plane.jpg);
+}
+
+#img4 {
+    background-image: url(../images/image-confetti.jpg);
+}
+
+
+
+.rest span {
+    display: block;
+    font-size: 0.8rem;
+    color:hsl(233, 8%, 62%);
+    
+}
+
+.rest h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight:300 ;
+    line-height: 1.3;
+    color: hsl(233, 26%, 24%);
+    cursor: pointer;
+}
+
+
+
+.rest p {
+    color: #7a7a7a;
+    line-height: 1.7;
+    font-size: 15px;
+
+}
+.rest {
+    padding: 25px;
+}
+
+
+footer{
+    display: flex;
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+    padding: 5vh 10vw;
+    height:25vh;
+    justify-content: space-between;
+}
+
+#footpart1{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 20%;
+}
+#footpart1 div{
+    display: flex;
+    justify-content: space-between;
+}
+#footpart2{
+    display: flex;
+
+    width: 25%;
+    gap: 30px;
+}
+
+#footpart2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+#footpart3{
+    width: 60%;
+}
+
+#footpart3{
+    display: flex;
+   justify-content: space-between;
+    flex-direction: column;
+    max-width:150px;
+ 
+    
+}
+
+
+#footpart3 span{
+    font-size: 0.9rem;
+    color: hsl(220, 16%, 96%);
+}
+
+@media (max-width: 850px) {
+    header nav,
+    header .not-menu-btn{
+        display:none;
+
+    }
+    .menu-btn{
+        display: block;
+        all: unset;
+    }
+
+   
+#section1{
+    flex-direction: column-reverse;
+    margin:0;
+    padding:0;
+    gap:100px;  
+    max-width: 100% !important; 
+}
+
+
+
+#section1 #part1{
+  margin:-40vw auto 0 ;
+}
+
+#part1 h1{
+    font-size: 3rem;
+}
+
+#part2 {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: -10vw -40vw  !important;
+    background-size:150vw!important;
+}
+#part2 img{
+    width:100vw;
+    position:relative;
+    top:-20vh;
+    overflow:hidden;
+    object-position: center;
+ 
+
+}
+#part1{
+    padding:0 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+#part1 button{
+margin:auto;
+}
+
+#section2 section{
+    flex-direction: column;
+}
+
+#section2 section img{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section2 section h3{
+    text-align: center;
+}
+
+footer{
+    flex-direction: column;
+    height: 45vh;
+    align-items:  center;
+}
+
+#footpart1{
+    align-items:  center;
+    gap:30px;
+}
+#footpart2{
+    display: block;
+text-align: center;
+
+}
+
+#footpart2 a{
+    padding:5px;
+}
+
+
+#footpart3 span{
+    padding: 10px;
+}
+
+#footpart1 div{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+}
+@media (width>=1000px ){
+    main #section1 #part2{
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 60vw;
+
+}
+#section1{
+    width:100%;
+    padding-left:10vw !important;
+    
+    
+}
+
+#part1 p {
+    margin-bottom:5vw;
+    padding:0;
+}
+#part2 img{
+    width:50vw;
+    position:relative;
+    top:-20%;
+    overflow:hidden;
+    right:-10%;
+}
+
+#part2{
+    overflow: hidden;
+}
+
+
+
+
+}
+
